@@ -1,0 +1,377 @@
+.hdf-nav-custom-1001 {
+  font-family: "Helvetica","Arial","PingFang SC","SimHei","SimSun","sans-serif";
+  font-size: 15px;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+.hdf-nav-custom-goBackIndex, .hdf-nav-custom-goSearch, .hdf-nav-custom-goHome {
+  text-decoration: none;
+}
+
+.hdf-nav-custom-1001 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+html body {
+  padding-top: 50px;
+}
+
+.dis-flex, .wap-head-nav .w-h-n-form .w-h-n-f-box, .wap-head-nav .w-h-n-btnlink, .wap-head-nav .w-h-n-imglink, .wap-head-nav .w-h-n-link, .wap-head-nav .w-h-n-line {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.flex-1, .wap-head-nav .w-h-n-form .w-h-n-f-box .w-h-n-f-b-txt, .wap-head-nav .w-h-n-btnlink .w-h-n-b-a, .wap-head-nav .w-h-n-imglink .w-h-n-i-a, .wap-head-nav .w-h-n-link .w-h-n-link-a, .wap-head-nav .w-h-n-line .w-h-n-l-a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.hdf-nav-custom-1001 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goBackIndex {
+  display: inline-block;
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goBackIndex .hdf-n-c-goBackLogo {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 122px;
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goSearch {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: 20px;
+  margin-right: 20px;
+  line-height: 35px;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+  .hdf-nav-custom-1001 .hdf-nav-custom-goSearch {
+    padding-right: 6px;
+  }
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goSearch .hdf-n-c-searchGlass {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  height: 13px;
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goHome {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .hdf-nav-custom-1001 .hdf-nav-custom-goHome {
+    right: 0;
+    padding-right: 10px;
+  }
+}
+
+.hdf-nav-custom-1001 .hdf-nav-custom-goHome .hdf-n-c-showNum {
+  display: none;
+  position: absolute;
+  right: -5px;
+  top: 3px;
+  padding: 0 4px;
+  height: 15px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 15px;
+  background-color: #FF0000;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+  .hdf-nav-custom-1001 .hdf-nav-custom-goHome .hdf-n-c-showNum {
+    right: 2px;
+  }
+}
+
+.wap-head-nav {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 15px 15px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999999999;
+  box-shadow: 0 3px 5px transparent;
+  box-sizing: border-box;
+}
+
+.wap-head-nav .w-h-n-form {
+  margin-bottom: 15px;
+}
+
+.wap-head-nav .w-h-n-form .w-h-n-f-box {
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.wap-head-nav .w-h-n-form .w-h-n-f-box .w-h-n-f-b-txt {
+  text-decoration: none;
+  line-height: 35px;
+  display: block;
+  padding-left: 10px;
+  width: 77%;
+  height: 35px;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+.wap-head-nav .w-h-n-form .w-h-n-f-box .w-h-n-f-b-btn {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 18%;
+  background: none;
+  border: none;
+  border-left: #dcdcdc 1px solid;
+  color: #333;
+}
+
+.wap-head-nav .w-h-n-btnlink {
+  margin-bottom: 15px;
+}
+
+.wap-head-nav .w-h-n-btnlink .w-h-n-b-a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.wap-head-nav .w-h-n-btnlink .w-h-n-b-left {
+  margin-right: 12px;
+  background: #00b4f0 url(//i1.hdfimg.com/touch/images/mnav_new_btn01.png) no-repeat 10px center/17px 16px;
+  text-decoration: none;
+}
+
+.wap-head-nav .w-h-n-btnlink .w-h-n-b-right {
+  text-decoration: none;
+  background: #ff6464 url(//i1.hdfimg.com/touch/images/mnav_new_btn02.png) no-repeat 10px center/17px 17px;
+}
+
+.wap-head-nav .w-h-n-imglink {
+  margin-bottom: 15px;
+}
+.wap-head-nav .w-h-n-center {
+  justify-content: center;
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-a {
+  height: 40px;
+  display: block;
+  background-size: 90px 39px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-left {
+  background-image: url(//i1.hdfimg.com/ssi/image/hdf_nav_zixun.png);
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-center {
+  background-image: url(//i1.hdfimg.com/ssi/image/hdf_nav_tel.png);
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-right {
+  background-image: url(//i1.hdfimg.com/ssi/image/hdf_nav_guahao.png);
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-jinri {
+  flex: 0 0 115px;
+  background-image: url(//i1.hdfimg.com/ssi/image/hdf_nav_jinri2.png);
+}
+
+.wap-head-nav .w-h-n-imglink .w-h-n-i-jisu {
+  flex: 0 0 115px;
+  background-image: url(//i1.hdfimg.com/ssi/image/hdf_nav_jisu.png);
+}
+
+.wap-head-nav .w-h-n-link {
+  margin-bottom: 5px;
+}
+
+.wap-head-nav .w-h-n-link .w-h-n-link-a {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.wap-head-nav .per_center {
+  padding: 0 15px 15px 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.wap-head-nav .per_center a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.wap-head-nav .per_center a .num {
+  display: inline-block;
+  height: 15px;
+  min-width: 15px;
+  border-radius: 15px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 0 5px;
+  line-height: 15px;
+  font-size: 11px;
+  vertical-align: 0;
+  margin-left: 5px;
+}
+
+.wap-head-nav .per_center_login {
+  padding: 0 15px 15px 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.wap-head-nav .per_center_login a {
+  text-decoration: none;
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.wap-head-nav .w-h-n-line .w-h-n-l-a {
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.wap-head-nav .w-h-n-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 7px 8px;
+  border-style: solid;
+  border-color: transparent transparent #000;
+  position: absolute;
+  top: -8px;
+  right: 15%;
+  opacity: .7;
+  margin-right: 30px;
+}
+
+.wap-head-nav .w-h-n-bottom {
+  height: 38px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -38px;
+  left: 0;
+}
+
+.wap-head-nav .w-h-n-bottom .w-h-n-b-radius {
+  width: 120%;
+  margin-left: -10%;
+  height: 80px;
+  border-radius: 150%;
+  margin-top: -50px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.wap-head-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: .2;
+  z-index: 99998;
+}
