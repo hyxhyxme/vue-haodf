@@ -1239,5 +1239,7 @@ export default {
 };
 </script>
 <style scoped>
-/* @import url(); 引入css类 */
+.wrap mescroll{
+  background: #fff
+}
 </style>

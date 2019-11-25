@@ -10,14 +10,14 @@ module.exports = {
     devServer:{
         proxy : {
             '/api':{
-                target : 'https://m.haodf.com/nconsult/nethospital/getOrdinaryClinic?facultyId=7673059776&dateTime=2019-11-16&randomNumber=041142153945194204',
+                target : 'https://m.haodf.com',
                 changeOrigin :true,
                 pathRewrite :{
                     '^/api': ''
                 }
             },
             '/foo':{
-                target:'https://m.haodf.com/nindex/ajaxGetDoctorList',
+                target:'https://m.haodf.com',
                 changeOrigin :true,
                 pathRewrite : {
                     '^/foo' : ''

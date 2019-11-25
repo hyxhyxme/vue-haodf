@@ -64,10 +64,6 @@
           class="haodfrulestext"
           >好大夫在线服务条款</a
         >
-        <!--?php } else {?>
-亲爱的用户，为了更好的为您服务，请您登录/注册后使用
-< ?php
-}?-->
       </p>
       <a href="#" class="nextstep nulltext" id="login_btn">登录</a>
       <div class="clearfix login_way">
@@ -98,6 +94,9 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
+  .login_content
+    background #fff
+    height 100%
     #form1
         display block
         width 100%

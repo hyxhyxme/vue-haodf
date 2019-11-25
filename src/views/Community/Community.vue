@@ -60,5 +60,8 @@ export default {
 };
 </script>
 <style scoped>
-/* @import url(); 引入css类 */
+.page{
+  background: rgb(255, 249, 249);
+  height: 100%
+}
 </style>

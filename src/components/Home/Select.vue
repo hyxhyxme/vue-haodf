@@ -730,11 +730,7 @@ export default {
     },
     methods:{
         handleClick(){
-            this.isdis =this.$store.state.display.isdisplay ? 'displaynone' : 'displayblock'
-            this.$store.commit('increment')
-            setTimeout(()=>{
-                 this.isdis =this.$store.state.display.isdisplay ? 'displaynone' : 'displayblock'
-            },0)
+            this.$emit('city')
         },
         handleProvice(ev){
             this.provice = ev.target.attributes['data-province']['nodeValue']

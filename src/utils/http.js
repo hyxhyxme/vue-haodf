@@ -6,20 +6,42 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 
 
-export const get = function(){
-    return axios.get('/api')
-        .then(function(result){
+export const get = function({keywords=''}){
+    return axios({
+        url:'/api/nindex/searchAutoword',
+        method:'get',
+        params:{
+            inputValue:keywords,
+            randomNumber: '09321104864215122'
+        }
+        }) .then(function(result){
             return result.data
-        })
-        .catch(function(error){
+        }) .catch(function(error){
             console.log(error);
         })
+}
+
+export const search = function({key='',page=1,size=10}){
+    return axios({
+        url:'/api/touch/search/getsearchdata',
+        params:{
+            key,
+            flowTitle:'',
+            page,
+            size,
+            _:1574491546145
+        }
+    }).then((result)=>{
+        return result
+    }).catch((error)=>{
+        console.log(error); 
+    })
 }
 
 
 export const post = function({ facultyId="zonghe", province='', city='', county='', positionText="全国"}){
     return axios({
-            url:'/foo',
+            url:'/foo/nindex/ajaxGetDoctorList',
             method:'post',
            /*  headers:{
                 'Content-Type' : 'application/x-www-form-urlencoded',

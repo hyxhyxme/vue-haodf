@@ -4,6 +4,7 @@
   </div>
 </template>
 <script>
+import 'assets/styles/search@aa923f5a005ad8c050431416e8ccc852.css'
 import 'assets/styles/mydoctor@ufd9cf.css'
 import 'assets/styles/hdfNavCustom1001_v2.css'
 import 'assets/styles/index@u86d00.css'
@@ -24,4 +25,6 @@ export default {
   #app
     height 100%
     margin-top -.5rem
+    background #fff
+ 
 </style>

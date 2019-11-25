@@ -43,6 +43,7 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background : #fff;
 
   header {
     height: 0.5rem;
