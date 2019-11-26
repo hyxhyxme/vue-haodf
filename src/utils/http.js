@@ -5,14 +5,19 @@ import VueAxios from 'vue-axios'
 
 Vue.use(VueAxios, axios)
 
+const getRandomNumber = function(){
+    let str = String(Math.random())
+    return str.substr(2)
+}
 
 export const get = function({keywords=''}){
+    getRandomNumber()
     return axios({
         url:'/api/nindex/searchAutoword',
         method:'get',
         params:{
             inputValue:keywords,
-            randomNumber: '09321104864215122'
+            randomNumber: getRandomNumber()
         }
         }) .then(function(result){
             return result.data
@@ -29,7 +34,7 @@ export const search = function({key='',page=1,size=10}){
             flowTitle:'',
             page,
             size,
-            _:1574491546145
+            _:new Date().getTime()
         }
     }).then((result)=>{
         return result
@@ -48,7 +53,7 @@ export const post = function({ facultyId="zonghe", province='', city='', county=
             }, */
             data :{
                 'facultyId':facultyId,
-                randomNumber:'07769437581672349',
+                randomNumber:getRandomNumber,
                 'params':{
                     'province':province,
                     'city' : city,

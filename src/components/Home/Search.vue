@@ -34,11 +34,11 @@
       <div class="history-search">
         <p class="clearfix h-s-title">
           <span class="fl">历史搜索</span>
-          <span class="fr hisClear js-hisClear">清空</span>
+          <span class="fr hisClear js-hisClear" @click="cancleSearch">清空</span>
         </p>
         <div class="history-content js-history-content">
           <ul>
-            <li class="h-c-item js-h-c-item" v-for="(item, index) in history" :key="index">{{item}}</li>
+            <li class="h-c-item js-h-c-item" v-for="(item, index) in history" :key="index" @click="searchThis(item)">{{item}}<span style="padding: 5px" @click.stop="deleteThis(item)">X</span></li>
           </ul>
         </div>
       </div>
@@ -238,6 +238,24 @@ export default {
       this.history = Object.keys(this.searchs)
       this.history = this.history.reverse()
       
+    },
+    cancleSearch(){
+      store.remove('searchList')
+      this.searchs = store.get('searchList')
+      if(this.searchs === undefined){
+        this.searchs = {}
+      }
+      this.history = Object.keys(this.searchs)
+    },
+    searchThis(item){
+      this.keywords = item
+      this.handleSearch()
+    },
+    deleteThis(item){
+      this.searchs = store.get('searchList')
+      delete this.searchs[item]
+      this.history = Object.keys(this.searchs)
+      store.set('searchList',this.searchs)
     }
   }
 };
@@ -271,9 +289,13 @@ export default {
             .art-times{
               color: #ff8c28;;
             }
-        }
+          }
         }
       }
 
-}
+    }
+    .h-c-item{
+      display: flex;
+      justify-content : space-between
+    }
 </style>
